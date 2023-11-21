@@ -6,6 +6,8 @@ Resource              ../Resourcefile/common.robot
 Suite Setup           Setup Browser
 Suite Teardown        End suite
 
+*** Variables ***
+${lword}    Arthur Song
 
 *** Test Cases ***
 Entering a Contacts
@@ -14,10 +16,11 @@ Entering a Contacts
     LaunchApp         Sales
     ClickText         Contacts
     UseTable          Item Number
-    ${vname}=         GetCellText                 r2/c?Name         tag=a
+    #${vname}=         GetCellText                 r2/c?Name         tag=a
+    #${vname}         Arthur Song
     Log               ${vname}
     # Run Keyword If                              ('${lcostprrice}'=='$30.00') and ('${lmarkup}'=='40.00%')    Test Keyword 1
-    Run Keyword If    '${vname}'=='Arthur Songs'                     Test Keyword 1
+    Run Keyword If    '${lword}'=='Arthur Songs'                     Test Keyword 1
     ...               ELSE                        Test keyword 2
     Sleep             10s
 
