@@ -14,7 +14,7 @@ Entering a Contacts
     LaunchApp     Sales
     ClickText     Contacts
     UseTable      Item Number
-    ${vname}=     GetFieldValue               r2/c?Name
+    ${vname}=     GetFieldValue               r2/c?Name    tag=a
     Log           ${vname}
     ClickText     Details
 
@@ -23,7 +23,7 @@ Entering a Contacts
 
 
 
-    #ClickUntil                               New Contact    New
+    #ClickUntil                               New Contact           New
     #UseModal     On
     #TypeText     Phone                       +917396637458
     #Picklist     Salutation                  Mr.
