@@ -27,7 +27,6 @@ Entering a Contacts
 Test Keyword 1
     Log To Console    Executed Keyword 1 - Expected Result
     ClickText         New
-    ClickText         Cancel
     Log               Log Executed 1 - Expected Result
 Test Keyword 2
     Log To Console    Executed Keyword 2 - Not Expected
