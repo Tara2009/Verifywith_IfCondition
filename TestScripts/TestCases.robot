@@ -18,7 +18,7 @@ Entering a Contacts
     UseTable          Item Number
     #${vname}=         GetCellText                 r2/c?Name         tag=a
     #${vname}         Arthur Song
-    Log               ${vname}
+    Log               ${lword}
     # Run Keyword If                              ('${lcostprrice}'=='$30.00') and ('${lmarkup}'=='40.00%')    Test Keyword 1
     Run Keyword If    '${lword}'=='Arthur Songs'                     Test Keyword 1
     ...               ELSE                        Test keyword 2
