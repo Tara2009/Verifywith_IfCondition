@@ -14,7 +14,7 @@ Entering a Contacts
     LaunchApp     Sales
     ClickText     Contacts
     UseTable      Item Number
-    ${vname}=     GetFieldValue               r2/c?Name    tag=a
+    ${vname}=     GetCellText               r2/c?Name    tag=a
     Log           ${vname}
     ClickText     Details
 
