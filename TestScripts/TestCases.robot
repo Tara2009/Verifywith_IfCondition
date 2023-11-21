@@ -26,7 +26,8 @@ Entering a Contacts
 *** Keywords ***
 Test Keyword 1
     Log To Console    Executed Keyword 1 - Expected Result
-    #ClickText         New
+    ClickText         Contacts
+    ClickText         New
     Log               Log Executed 1 - Expected Result
 Test Keyword 2
     Log To Console    Executed Keyword 2 - Not Expected
