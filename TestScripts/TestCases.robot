@@ -17,7 +17,7 @@ Entering a Contacts
     ${vname}=         GetCellText                 r2/c?Name         tag=a
     Log               ${vname}
     # Run Keyword If                              ('${lcostprrice}'=='$30.00') and ('${lmarkup}'=='40.00%')    Test Keyword 1
-    Run Keyword If    '${vname}'=='Arthur Song'                     Test Keyword 1
+    Run Keyword If    '${vname}'=='Arthur Songs'                     Test Keyword 1
     ...               ELSE                        Test keyword 2
     Sleep             10s
 
